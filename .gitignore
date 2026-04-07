@@ -1,0 +1,38 @@
+# OS Generated Files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.log
+*.tmp
+
+# Sensitive Dataে এমন ফাইল)
+*.key
+*.pem
+*.secret
+credentials
+.env
+.env.*
+
+# Pythonযাশ তৈরি করে)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# System/Apps Cache & Temp
+.cache/
+.dbus/
+.serverauth.*
+Xauthority
+.Xauthority
+
+# Waybar/Hyprland specific temp files
+scripts/*.log
+waybar/scripts/__pycache__/
+
+# Backups
+*.bak
+*.old
+*.save
