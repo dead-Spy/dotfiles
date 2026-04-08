@@ -45,7 +45,7 @@
     "format": "󰥔 {:%I:%M %p}",
     "tooltip-format": "<tt>{calendar}</tt>"
   },
-  "custom/media": {
+"custom/media": {
     "format": "{icon} {text}",
     "return-type": "json",
     "max-length": 30,
@@ -59,7 +59,7 @@
       "default": "󰎆"
     },
     "escape": true,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{title}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",
     "on-click": "playerctl play-pause"
   },
   "pulseaudio": {
