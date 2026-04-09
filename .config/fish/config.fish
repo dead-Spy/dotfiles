@@ -20,3 +20,6 @@ end
 if test -f ~/.config/fish/weather_key.fish
     source ~/.config/fish/weather_key.fish
 end
+set -g fish_greeting ""
+fastfetch
+
