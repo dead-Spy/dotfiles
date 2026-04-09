@@ -36,3 +36,4 @@ waybar/scripts/__pycache__/
 *.bak
 *.old
 *.save
+.config/fish/weather_key.fish

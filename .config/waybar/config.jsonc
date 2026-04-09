@@ -18,13 +18,13 @@
     "on-click": "rofi -show drun",
     "tooltip": false
   },
-  "custom/weather": {
+"custom/weather": {
     "format": "{}",
-    "return-type": "json",
-    "exec": "~/.config/waybar/scripts/weather.py",
+    "use-pango": true,
+    "tooltip": true,
     "interval": 1800,
-    "tooltip": true
-  },
+    "exec": "~/.config/waybar/scripts/get_weather.sh",
+},
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
