@@ -5,11 +5,11 @@
   "modules-center": [
     "custom/launcher",
     "clock",
-    "custom/weather",
     "custom/media",
     "hyprland/workspaces",
     "power-profiles-daemon",
     "network",
+    "custom/weather",
     "pulseaudio",
     "custom/power"
   ],
@@ -45,7 +45,7 @@
     "format": "󰥔 {:%I:%M %p}",
     "tooltip-format": "<tt>{calendar}</tt>"
   },
-"custom/media": {
+  "custom/media": {
     "format": "{icon} {text}",
     "return-type": "json",
     "max-length": 30,
@@ -79,7 +79,7 @@
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "󰖪 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-    "on-click": "alacritty -e nmtui"
+    "on-click": "kitty -e nmtui"
   },
   "power-profiles-daemon": {
     "format": "{icon} {profile}",
