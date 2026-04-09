@@ -59,7 +59,7 @@
       "default": "󰎆"
     },
     "escape": true,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",
+    "exec": "python3 /home/deadspy/.config/waybar/scripts/mediaplayer.py",
     "on-click": "playerctl play-pause"
   },
   "pulseaudio": {

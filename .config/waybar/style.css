@@ -59,6 +59,10 @@ window#waybar {
     margin: 0 5px;
 }
 
+#custom-media.stopped {
+    color: @grey1;
+}
+
 #power-profiles-daemon {
     margin-left: 5px;
 }
