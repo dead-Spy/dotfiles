@@ -1,0 +1,12 @@
+configuration {
+    modi:                       "drun,run,window,combi";
+    show-icons:                 true;
+    display-drun:               "";
+    display-run:                "";
+    display-window:             "";
+    display-combi:              "";
+    drun-display-format:        "{name}";
+    font:                        "JetBrainsMono Nerd Font 12";
+}
+
+@theme "~/.config/rofi/gruvbox-material.rasi"
