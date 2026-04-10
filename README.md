@@ -39,20 +39,3 @@ A performance-driven, aesthetically curated **Arch Linux** environment focused o
 </div>
 ----------------------------------------------------------------------------------------------
 
-
-   ```
-
-<br><br>
-
-<p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
-</p>
-
-<p align="center">
-        <i><code>&copy 2025-present <a href="https://github.com/ashish0kumar">Ashish Kumar</a></code></i>
-</p>
-
-<div align="center">
-<a href="https://github.com/ashish0kumar/dotfiles/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ashish0kumar/dotfiles?style=for-the-badge&color=CBA6F7&logoColor=cdd6f4&labelColor=302D41" alt="LICENSE"></a>&nbsp;&nbsp;
-</div>
-
