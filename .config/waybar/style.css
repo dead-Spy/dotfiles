@@ -115,3 +115,9 @@ window#waybar {
     background-color: @red;
     color: @bg1;
 }
+tooltip {
+    background: @bg1;
+    border-radius: 15px;
+    border: 1px solid @bg3;
+    padding: 8px;
+}
