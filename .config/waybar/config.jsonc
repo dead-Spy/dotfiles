@@ -18,13 +18,13 @@
     "on-click": "rofi -show drun",
     "tooltip": false
   },
-"custom/weather": {
+  "custom/weather": {
     "format": "{}",
     "use-pango": true,
     "tooltip": true,
     "interval": 1800,
-    "exec": "~/.config/waybar/scripts/get_weather.sh",
-},
+    "exec": "~/.config/waybar/scripts/get_weather.sh"
+  },
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -43,7 +43,7 @@
   },
   "clock": {
     "format": "󰥔 {:%I:%M %p}",
-    "tooltip-format": "<tt>{calendar}</tt>"
+    "format-alt": "󰃭 {:%a, %d %b}"
   },
   "custom/media": {
     "format": "{icon} {text}",

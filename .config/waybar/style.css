@@ -50,7 +50,6 @@ window#waybar {
     font-weight: 500;
 }
 
-/* weather specific optimization */
 #custom-weather {
     color: @aqua;
     margin: 0 5px;
