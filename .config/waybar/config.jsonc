@@ -43,7 +43,8 @@
   },
   "clock": {
     "format": "󰥔 {:%I:%M %p}",
-    "format-alt": "󰃭 {:%a, %d %b}"
+    "format-alt": "󰃭 {:%a, %d %b}",
+    "tooltip": false
   },
   "custom/media": {
     "format": "{icon} {text}",
@@ -83,7 +84,7 @@
   },
   "power-profiles-daemon": {
     "format": "{icon} {profile}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip-format": "Power profile: {profile}",
     "tooltip": true,
     "format-icons": {
       "default": "",
