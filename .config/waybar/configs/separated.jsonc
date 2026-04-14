@@ -1,0 +1,159 @@
+{
+  "position": "top",
+  "margin-top": 18,
+  "margin-left": 18,
+  "margin-right": 18,
+  "spacing": 18,
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "custom/media"
+  ],
+  "modules-center": [
+    "clock",
+    "custom/weather"
+  ],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "disk",
+    "network",
+    "pulseaudio",
+    "power-profiles-daemon",
+    "custom/switchnext",
+    "custom/notification",
+    "custom/power"
+  ],
+  "custom/launcher": {
+    "format": "󰣇",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+  "custom/weather": {
+    "format": "{}",
+    "use-pango": true,
+    "tooltip": true,
+    "interval": 1800,
+    "exec": "~/.config/waybar/scripts/get_weather.sh"
+  },
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format-active": "{name} {windows}",
+    "on-click": "activate",
+    "window-rewrite-default": "󰣆",
+    "window-rewrite": {
+      "class<firefox>": "",
+      "class<kitty>": "",
+      "class<code-oss>": "󰨞",
+      "class<discord>": "󰙯",
+      "class<spotify>": "",
+      "class<thunar>": "󰉋",
+      "class<vlc>": "󰕼",
+      "class<chromium>": "",
+      "class<google-chrome>": "",
+      "class<nautilus>": "󰉋",
+      "class<telegram-desktop>": "",
+      "class<obsidian>": "󱓧",
+      "class<codium>": "",
+      "title<.*youtube.*>": "󰗃"
+    },
+    "format-window-separator": " ",
+    "persistent-workspaces": {
+      "HDMI-A-1": [1, 2, 3, 4, 5]
+    }
+  },
+  "clock": {
+    "format": "󰥔 {:%I:%M %p}",
+    "format-alt": "󰃭 {:%a, %d %b}",
+    "tooltip": false
+  },
+  "custom/media": {
+    "format": "{icon} {text}",
+    "return-type": "json",
+    "max-length": 30,
+    "format-icons": {
+      "spotify": "",
+      "vlc": "󰕼",
+      "chromium": "",
+      "firefox": "",
+      "chrome": "",
+      "youtube": "󰗃",
+      "default": "󰎆"
+    },
+    "escape": true,
+    "exec": "python3 /home/deadspy/.config/waybar/scripts/mediaplayer.py",
+    "on-click": "playerctl play-pause"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "states": {
+      "zero": 0
+    },
+    "on-click": "pavucontrol"
+  },
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-disconnected": "󰖪 Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "on-click": "kitty -e nmtui"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon} {profile}",
+    "tooltip-format": "Power profile: {profile}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "wlogout",
+    "tooltip": false
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true
+  },
+  "memory": {
+    "format": "󰘚 {}%",
+    "tooltip": true
+  },
+  "disk": {
+    "format": "󰋊 {percentage_used}%",
+    "path": "/"
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "custom/switchnext": {
+    "format": "󰃇",
+    "on-click": "~/.config/waybar/scripts/switch_layout.sh",
+    "tooltip-format": "Switch Waybar Layout"
+}
+}
