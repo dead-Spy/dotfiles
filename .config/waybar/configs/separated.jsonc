@@ -75,7 +75,7 @@
   "custom/media": {
     "format": "{icon} {text}",
     "return-type": "json",
-    "max-length": 33,
+    "max-length": 30,
     "format-icons": {
       "spotify": "",
       "vlc": "󰕼",
