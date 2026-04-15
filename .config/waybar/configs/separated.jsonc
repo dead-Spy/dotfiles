@@ -10,8 +10,10 @@
     "custom/media"
   ],
   "modules-center": [
+    "custom/icon",
     "clock",
-    "custom/weather"
+    "custom/weather",
+    "custom/icon"
   ],
   "modules-right": [
     "cpu",
@@ -25,7 +27,7 @@
     "custom/power"
   ],
   "custom/launcher": {
-    "format": "󰣇",
+    "format": "",
     "on-click": "rofi -show drun",
     "tooltip": false
   },
@@ -61,6 +63,10 @@
     "persistent-workspaces": {
       "HDMI-A-1": [1, 2, 3, 4, 5]
     }
+  },
+    "custom/icon": {
+    "format": "",
+    "tooltip": false
   },
   "clock": {
     "format": "󰥔 {:%I:%M %p}",
@@ -152,7 +158,7 @@
     "escape": true
   },
   "custom/switchnext": {
-    "format": "󰃇",
+    "format": "󰄛",
     "on-click": "~/.config/waybar/scripts/switch_layout.sh",
     "tooltip-format": "Switch Waybar Layout"
 }

@@ -100,7 +100,7 @@
     "tooltip": false
   },
 "custom/switchnext": {
-    "format": "󰃇",
+    "format": "󰄛",
     "on-click": "~/.config/waybar/scripts/switch_layout.sh",
     "tooltip-format": "Switch Waybar Layout"
 }
