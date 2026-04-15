@@ -24,12 +24,6 @@ window#waybar {
     padding-left: 5px;
     animation: rainbow 5s infinite linear;
 }
-#custom-icon {
-    font-size: 1.3rem;
-    margin-right: 10px;
-    padding-left: 5px;
-    animation: rainbow 5s infinite linear;
-}
 
 @keyframes rainbow {
     0% { color: @blue; }
@@ -141,7 +135,7 @@ tooltip label {
 }
 #custom-switchnext {
     background-color: @bg2;
-    color: @purple; /* আপনি চাইলে @blue বা @aqua ও ব্যবহার করতে পারেন */
+    color: @purple; 
     font-size: 1.1rem;
     padding: 2px 12px;
     border-radius: 99px;

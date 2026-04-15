@@ -17,7 +17,6 @@ def get_icon(name):
 def render(manager):
     players = manager.props.players
     
-    # প্লেয়ার না থাকলে সরাসরি Nothing Playing
     if not players:
         print(json.dumps({"text": "Nothing Playing", "class": "stopped", "alt": "default", "icon": "󰎆"}))
         sys.stdout.flush()
@@ -33,7 +32,6 @@ def render(manager):
     artist = player.get_artist()
     status = player.get_property("playback-status")
 
-    # ফিক্স: যদি টাইটেল এবং আর্টিস্ট দুইটাই খালি থাকে (ট্যাব ক্লোজ করলে যা হয়)
     if not title and not artist:
         print(json.dumps({"text": "Nothing Playing", "class": "stopped", "alt": "default", "icon": "󰎆"}))
         sys.stdout.flush()
@@ -43,7 +41,15 @@ def render(manager):
     if status == Playerctl.PlaybackStatus.PLAYING: status_str = "playing"
     elif status == Playerctl.PlaybackStatus.PAUSED: status_str = "paused"
 
-    output = f"{artist} - {title}" if artist and title else (title or artist or "Unknown")
+    if artist and title:
+        clean_artist = artist.lower().replace("vevo", "").strip()
+        if clean_artist in title.lower():
+            output = title
+        else:
+            output = f"{artist} - {title}"
+    else:
+        output = title or artist or "Unknown"
+
     output = html.escape(output)
     
     data = {

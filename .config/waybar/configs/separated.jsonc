@@ -10,10 +10,9 @@
     "custom/media"
   ],
   "modules-center": [
-    "custom/icon",
+    
     "clock",
-    "custom/weather",
-    "custom/icon"
+    "custom/weather"
   ],
   "modules-right": [
     "cpu",
@@ -64,19 +63,19 @@
       "HDMI-A-1": [1, 2, 3, 4, 5]
     }
   },
-    "custom/icon": {
-    "format": "",
-    "tooltip": false
-  },
   "clock": {
     "format": "󰥔 {:%I:%M %p}",
     "format-alt": "󰃭 {:%a, %d %b}",
     "tooltip": false
   },
+  "custom/icon": {
+    "format": "",
+    "tooltip": false
+  },
   "custom/media": {
     "format": "{icon} {text}",
     "return-type": "json",
-    "max-length": 30,
+    "max-length": 33,
     "format-icons": {
       "spotify": "",
       "vlc": "󰕼",
@@ -161,5 +160,5 @@
     "format": "󰄛",
     "on-click": "~/.config/waybar/scripts/switch_layout.sh",
     "tooltip-format": "Switch Waybar Layout"
-}
+  }
 }
