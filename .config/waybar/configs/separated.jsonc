@@ -17,10 +17,10 @@
     "cpu",
     "memory",
     "disk",
-    "network",
     "pulseaudio",
-    "power-profiles-daemon",
     "custom/switchnext",
+    "power-profiles-daemon",
+    "network",
     "custom/notification",
     "custom/power"
   ],
@@ -97,14 +97,14 @@
   },
   "network": {
     "format-wifi": " {essid}",
-    "format-ethernet": "󰈀 {ifname}",
+    "format-ethernet": "󰈀",
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "󰖪 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
     "on-click": "kitty -e nmtui"
   },
   "power-profiles-daemon": {
-    "format": "{icon} {profile}",
+    "format": "{icon}",
     "tooltip-format": "Power profile: {profile}",
     "tooltip": true,
     "format-icons": {
