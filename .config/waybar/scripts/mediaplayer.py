@@ -31,6 +31,7 @@ def render(manager):
     title = player.get_title()
     artist = player.get_artist()
     status = player.get_property("playback-status")
+    player_name = player.props.player_name.lower()
 
     if not title and not artist:
         print(json.dumps({"text": "Nothing Playing", "class": "stopped", "alt": "default", "icon": "󰎆"}))
@@ -41,14 +42,10 @@ def render(manager):
     if status == Playerctl.PlaybackStatus.PLAYING: status_str = "playing"
     elif status == Playerctl.PlaybackStatus.PAUSED: status_str = "paused"
 
-    if artist and title:
-        clean_artist = artist.lower().replace("vevo", "").strip()
-        if clean_artist in title.lower():
-            output = title
-        else:
-            output = f"{artist} - {title}"
+    if any(browser in player_name for browser in ["chromium", "firefox", "chrome"]):
+        output = title if title else (artist or "Unknown")
     else:
-        output = title or artist or "Unknown"
+        output = f"{artist} - {title}" if artist and title else (title or artist or "Unknown")
 
     output = html.escape(output)
     
