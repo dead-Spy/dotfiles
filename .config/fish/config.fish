@@ -10,3 +10,8 @@ end
 
 set -g fish_greeting ""
 fastfetch
+
+function setwall
+    swww img $argv[1] --transition-type grow --transition-pos 0.85,0.97 --transition-step 90
+    wal -i $argv[1]
+end
