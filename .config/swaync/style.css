@@ -1,0 +1,39 @@
+@import url("colors.css");
+@import url("themes/notifications.css");
+@import url("themes/central_control.css");
+
+@define-color background      @bg0;
+@define-color foreground      @fg;
+@define-color color1          @red;
+@define-color color2          @green;
+@define-color color3          @yellow;
+@define-color color4          @blue;
+@define-color color5          @purple;
+@define-color color6          @aqua;
+@define-color background-sec  @bg1;
+@define-color text            @fg;
+
+* {
+  color: @foreground;
+  all: unset;
+  font-size: 14px;
+  font-family: "JetBrains Mono Nerd Font";
+  transition: 200ms;
+}
+
+.blank-window {  
+  background: transparent;  
+}
+
+window#swaync-notification-window,
+window#swaync-control-center {
+  background: transparent;
+}
+
+.floating-notifications.background {
+  background: transparent;
+}
+
+.notification-row {
+  background: transparent;
+}
