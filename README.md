@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" height="100" />
+  
   <h1>ᴅᴏᴛꜰɪʟᴇs // ᴅᴇᴀᴅ-sᴘʏ</h1>
   <p align="center">
     <img src="https://img.shields.io/badge/OS-Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" />
