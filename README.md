@@ -17,23 +17,6 @@ Minimal, productivity-focused **Arch Linux** setup powered by **Hyprland**, **Fi
 
 ---
 
-## Preview
-
-> Replace these placeholders with your real screenshots.
-
-```text
-assets/
-├── desktop.png
-├── terminal.png
-├── launcher.png
-└── notification.png
-```
-
-![Desktop](assets/lock.png)
-![Terminal](assets/rofi.png)
-
----
-
 ## About
 
 This repository contains my personal Linux dotfiles used for daily development, workflow optimization, and desktop customization.
