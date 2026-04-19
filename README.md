@@ -162,15 +162,6 @@ Built for speed, focus, simplicity, and professional daily development workflow.
 
 ---
 
-## Customization Tips
-
-- Replace screenshots in `assets/`
-- Change wallpaper paths
-- Edit Waybar modules
-- Update Hyprland keybindings
-- Modify Fish aliases
-- Customize Starship prompt
-
 ---
 
 ## Credits
