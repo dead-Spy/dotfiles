@@ -29,8 +29,8 @@ assets/
 └── notification.png
 ```
 
-![Desktop](assets/desktop.png)
-![Terminal](assets/terminal.png)
+![Desktop](assets/lock.png)
+![Terminal](assets/rofi.png)
 
 ---
 
