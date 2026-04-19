@@ -1,5 +1,3 @@
-# dead-Spy Dotfiles
-
 <div align="center">
 
 # dead-Spy Dotfiles
