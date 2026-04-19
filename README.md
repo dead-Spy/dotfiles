@@ -6,10 +6,10 @@
 
 Minimal, productivity-focused **Arch Linux** setup powered by **Hyprland**, **Fish**, **Kitty**, and **Waybar**.
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/dotfiles?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/dotfiles?style=for-the-badge)
-![Repo Size](https://img.shields.io/github/repo-size/yourusername/dotfiles?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/dotfiles?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/dead-Spy/dotfiles?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/dead-Spy/dotfiles?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/dead-Spy/dotfiles?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/dead-Spy/dotfiles?style=for-the-badge)
 ![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/WM-Hyprland-58E1FF?style=for-the-badge)
 
