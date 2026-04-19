@@ -179,3 +179,17 @@ MIT License
 Made with Arch + Hyprland + Coffee
 
 </div>
+
+---
+
+## 🛠 Work in Progress
+
+This setup is a **learning project** and is currently under active development. I am focusing on building a clean, modular, and professional environment. 
+
+**I would love your help!**
+If you have ideas for optimization, better shell aliases, or new themes:
+- Feel free to **Open an Issue**.
+- Submit a **Pull Request**.
+- Or just share your feedback to help me learn!
+
+Let's build a solid system together. 🚀
