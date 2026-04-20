@@ -2,7 +2,7 @@
 
 # dead-Spy Dotfiles
 
-Minimal, productivity-focused **Arch Linux** setup powered by **Hyprland**, **Fish**, **Kitty**, and **Waybar**.
+Only the Most Essential Dev Setup
 
 ![GitHub stars](https://img.shields.io/github/stars/dead-Spy/dotfiles?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/dead-Spy/dotfiles?style=for-the-badge)
