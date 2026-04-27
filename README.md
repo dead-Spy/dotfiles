@@ -3,7 +3,7 @@
       <img width="40%" src="https://raw.githubusercontent.com/Mangeshrex/dotfiles/main/etc/cat.gif">
     </p>
 
-# dead-Spy Dotfiles
+# Kuro Nekoy Dotfiles
 
 Only the Most Essential Dev Setup
 
