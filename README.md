@@ -1,4 +1,7 @@
 <div align="center">
+    <p align="center">
+      <img width="40%" src="https://raw.githubusercontent.com/Mangeshrex/dotfiles/main/etc/cat.gif">
+    </p>
 
 # dead-Spy Dotfiles
 
