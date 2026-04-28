@@ -1,144 +1,198 @@
-# 📁 Dotfiles - Custom Configuration Files for Linux Systems
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) 
-![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square)
+<div align="center">
+    <p align="center">
+      <img width="40%" src="https://raw.githubusercontent.com/Mangeshrex/dotfiles/main/etc/cat.gif">
+    </p>
 
-> A collection of dotfiles for customizing Linux systems, including configuration files for various applications and tools.
+# Kuro-Nekoy Dotfiles 🐈‍⬛
 
-## 📝 Table of Contents
-1. [Description](#description)
-2. [Demo/Screenshots](#demoscreenshots)
-3. [Features](#features)
-4. [Tech Stack](#tech-stack)
-5. [Project Structure](#project-structure)
-6. [Prerequisites](#prerequisites)
-7. [Installation](#installation)
-8. [Environment Variables](#environment-variables)
-9. [Usage](#usage)
-10. [Configuration](#configuration)
-11. [API Reference](#api-reference)
-12. [Examples](#examples)
-13. [Testing](#testing)
-14. [Deployment](#deployment)
-15. [Contributing](#contributing)
-16. [Roadmap](#roadmap)
-17. [Changelog](#changelog)
-18. [License](#license)
-19. [Acknowledgements](#acknowledgements)
+Only the Most Essential Dev Setup
 
-## 📄 Description
-The dotfiles project provides a set of configuration files for customizing Linux systems. These files are designed to be highly customizable and can be used to personalize various aspects of the system, including the appearance and behavior of applications.
+![GitHub stars](https://img.shields.io/github/stars/dead-Spy/dotfiles?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/dead-Spy/dotfiles?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/dead-Spy/dotfiles?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/dead-Spy/dotfiles?style=for-the-badge)
+![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![Hyprland](https://img.shields.io/badge/WM-Hyprland-58E1FF?style=for-the-badge)
 
-## 📸 Demo/Screenshots
-To be added.
+</div>
 
-## ✨ Features
-- 🎨 **Customizable Themes**: Support for custom themes and color schemes.
-- ⚡ **Performance Optimization**: Configuration files optimized for performance.
-- 🔒 **Security Features**: Security-focused configuration options.
-- 🎯 **Customizable Layout**: Support for custom layouts and window management.
-- 📊 **System Monitoring**: Configuration files for system monitoring tools.
+---
 
-## 🚀 Tech Stack
-The dotfiles project uses the following technologies:
-- CSS3 for styling and theming.
-- Python for scripting and automation.
+## About
 
-## 🏗️ Project Structure
-```markdown
-dotfiles/
-├── .config/                       # Configuration files
-│   ├── application.conf            # Application configuration
-│   └── system.conf                # System configuration
-├── assets/                         # Assets and resources
-│   ├── images/                     # Image files
-│   └── themes/                     # Theme files
-├── sddm/                           # SDDM configuration
-│   ├── sddm.conf                   # SDDM configuration file
-│   └── theme/                      # SDDM theme files
-├── README.md                       # This file
-└── .gitignore                      # Git ignore file
+This repository contains my personal Linux dotfiles used for daily development, workflow optimization, and desktop customization.
+
+The setup is designed to be:
+
+- Fast
+- Clean
+- Keyboard-driven
+- Modular
+- Easy to maintain
+- Developer focused
+
+---
+
+## Stack
+
+| Component | Tool |
+|----------|------|
+| OS | Arch Linux |
+| Window Manager | Hyprland |
+| Shell | Fish |
+| Terminal | Kitty |
+| Status Bar | Waybar |
+| Launcher | Rofi |
+| Notifications | SwayNC |
+| File Manager | Thunar |
+| Prompt | Starship |
+
+---
+
+## Features
+
+- Minimal modern UI
+- Fast Wayland workflow
+- Keyboard-driven navigation
+- Modular config structure
+- Symlink-managed dotfiles
+- Lightweight performance
+- Developer terminal environment
+- Consistent theming
+- Daily-use optimized
+
+---
+
+## Repository Structure
+
+```bash
+.config/
+├── hypr/
+├── waybar/
+├── kitty/
+├── fish/
+├── rofi/
+├── swaync/
+├── wlogout/
+└── starship.toml
 ```
 
-## 📝 Prerequisites
-To use the dotfiles project, you will need:
-- A Linux system with a compatible desktop environment.
-- Python 3.x installed.
-- CSS3 support in your web browser (if applicable).
+---
 
-## 📦 Installation
-To install the dotfiles project, follow these steps:
+## Installation
+
+### Clone
+
 ```bash
-git clone https://github.com/username/dotfiles.git
+git clone https://github.com/yourusername/dotfiles.git
 cd dotfiles
-# Copy configuration files to your home directory
-cp -r .config ~/
-# Configure SDDM (if applicable)
-cp -r sddm /etc/sddm
 ```
 
-## 📊 Environment Variables
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `THEME` | The theme to use | No |
-| `LAYOUT` | The layout to use | No |
+### Backup Existing Configs
 
-## 🚀 Usage
-To use the dotfiles project, simply configure your system to use the provided configuration files. You can do this by copying the configuration files to your home directory and configuring your system to use them.
-
-## 📈 Configuration
-The dotfiles project provides a range of configuration options, including support for custom themes and layouts. To configure the project, edit the configuration files in the `.config` directory.
-
-## 📚 API Reference
-To be added.
-
-## 📝 Examples
-To be added.
-
-## 🧪 Testing
-To test the dotfiles project, follow these steps:
 ```bash
-# Test the configuration files
-cd .config
-# Run the test script (if applicable)
-./test.sh
+mv ~/.config/hypr ~/.config/hypr.backup
+mv ~/.config/waybar ~/.config/waybar.backup
+mv ~/.config/kitty ~/.config/kitty.backup
+mv ~/.config/fish ~/.config/fish.backup
 ```
 
-## 🚀 Deployment
-To deploy the dotfiles project, follow these steps:
+### Create Symlinks
+
 ```bash
-# Clone the repository
-git clone https://github.com/username/dotfiles.git
-# Configure your system to use the configuration files
-cp -r .config ~/
-# Configure SDDM (if applicable)
-cp -r sddm /etc/sddm
+ln -s ~/dotfiles/.config/hypr ~/.config/hypr
+ln -s ~/dotfiles/.config/waybar ~/.config/waybar
+ln -s ~/dotfiles/.config/kitty ~/.config/kitty
+ln -s ~/dotfiles/.config/fish ~/.config/fish
+ln -s ~/dotfiles/.config/rofi ~/.config/rofi
+ln -s ~/dotfiles/.config/swaync ~/.config/swaync
 ```
 
-## 🤝 Contributing
-Contributions are welcome! To contribute to the dotfiles project, follow these steps:
+---
+
+## Dependencies
+
 ```bash
-# Fork the repository
-git fork https://github.com/username/dotfiles.git
-# Make your changes
-# Commit your changes
-git commit -m "Your commit message"
-# Push your changes
-git push origin your-branch
-# Create a pull request
+hyprland
+kitty
+fish
+waybar
+rofi
+swaync
+thunar
+starship
+wlogout
+waypaper
 ```
 
-## 🗺️ Roadmap
-The dotfiles project is currently in development. Future plans include:
-- Adding support for more desktop environments.
-- Improving the configuration options.
-- Adding more themes and layouts.
+Install:
 
-## 📄 Changelog
-To be added.
+```bash
+sudo pacman -S hyprland kitty fish waybar rofi swaync thunar
+yay -S starship waypaper wlogout
+```
 
-## 📜 License
-The dotfiles project is licensed under the MIT License.
+---
 
-## 🙏 Acknowledgements
-The dotfiles project was inspired by various other dotfiles projects. Thanks to all the contributors and maintainers of these projects for their hard work and dedication.
+## Keybindings
+
+| Key | Action |
+|-----|--------|
+| SUPER + Enter | Terminal |
+| SUPER + Q | Close Window |
+| SUPER + D | Launcher |
+| SUPER + E | File Manager |
+| SUPER + Shift + Q | Logout Menu |
+| SUPER + Shift + S | Screenshot |
+
+---
+
+## Workflow Philosophy
+
+Built for speed, focus, simplicity, and professional daily development workflow.
+
+---
+
+## Roadmap
+
+- [ ] Multi-monitor profiles
+- [ ] Auto theme switching
+- [ ] Install script
+- [ ] More shell aliases
+- [ ] Better lockscreen
+
+---
+
+---
+
+## Credits
+
+Inspired by the Linux ricing and open-source community.
+
+---
+
+## License
+
+MIT License
+
+---
+
+<div align="center">
+
+Made with Arch + Hyprland + Coffee
+
+</div>
+
+---
+
+## 🛠 Work in Progress
+
+This setup is a **learning project** and is currently under active development. I am focusing on building a clean, modular, and professional environment. 
+
+**I would love your help!**
+If you have ideas for optimization, better shell aliases, or new themes:
+- Feel free to **Open an Issue**.
+- Submit a **Pull Request**.
+- Or just share your feedback to help me learn!
+
+Let's build a solid system together... 🚀
