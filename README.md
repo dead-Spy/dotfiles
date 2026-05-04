@@ -179,7 +179,7 @@ MIT License
 
 <div align="center">
 
-Made with Arch + Hyprland + Coffee
+Made with Arch + Hyprland + Love
 
 </div>
 
